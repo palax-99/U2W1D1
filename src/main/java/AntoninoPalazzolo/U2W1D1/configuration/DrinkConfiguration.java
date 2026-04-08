@@ -11,6 +11,15 @@ public class DrinkConfiguration {
     public Drink lemonadeDrink() {
         return new Drink("Lemonade", 128, 1.29, 0.33);
     }
-    
+
+    @Bean
+    public Drink waterDrink() {
+        return new Drink("Water", 0, 1.29, 0.5);
+    }
+
+    @Bean
+    public Drink wineDrink() {
+        return new Drink("Wine", 607, 7.49, 0.75, 13);
+    }
 
 }

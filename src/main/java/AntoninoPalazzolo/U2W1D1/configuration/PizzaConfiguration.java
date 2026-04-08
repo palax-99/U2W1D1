@@ -43,14 +43,9 @@ public class PizzaConfiguration {
         return new Pizza("Pizza Margherita", 1104, 4.99, toppings);
     }
 
-    @Bean
-    public Pizza hawaiiPizza(Topping cheese, Topping ham, Topping pineapple) {
-        List<Topping> toppings = new ArrayList<>();
-        toppings.add(cheese);
-        toppings.add(ham);
-        toppings.add(pineapple);
-        return new Pizza("Pizza Hawaii", 1024, 6.49, toppings);
-    }
+    //@Bean
+    //public Pizza hawaiiPizza(Topping cheese, Topping ham, Topping pineapple) {
+    //
 
     @Bean
     public Pizza salamiPizza(Topping cheese, Topping salami) {
@@ -59,6 +54,6 @@ public class PizzaConfiguration {
         toppings.add(salami);
         return new Pizza("Pizza Salami", 1160, 5.99, toppings);
     }
-
-
 }
+
+
